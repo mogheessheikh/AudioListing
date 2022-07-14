@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashController" customModule="AudioListing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="techozon" translatesAutoresizingMaskIntoConstraints="NO" id="reD-rc-gVx">
+                                <rect key="frame" x="79.5" y="419.5" width="255" height="57"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eu-xI-oy1">
+                                <rect key="frame" x="337" y="841" width="57" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kAb-g0-ZWE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Eu-xI-oy1" secondAttribute="trailing" constant="20" id="HmW-6A-TM4"/>
+                            <constraint firstItem="reD-rc-gVx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gFZ-re-rEh"/>
+                            <constraint firstItem="4Eu-xI-oy1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rEa-MC-p4O"/>
+                            <constraint firstItem="4Eu-xI-oy1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="wdB-Ju-DEB"/>
+                            <constraint firstItem="reD-rc-gVx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z3e-Ud-ype"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblVersion" destination="4Eu-xI-oy1" id="Lzd-yS-6F9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="103.79464285714285"/>
+        </scene>
+        <!--Audio List Controller-->
+        <scene sceneID="xch-DX-q6h">
+            <objects>
+                <viewController storyboardIdentifier="AudioListController" id="QcK-lB-gMp" customClass="AudioListController" customModule="AudioListing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8D2-nb-u8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a48-hn-Nwf">
+                                <rect key="frame" x="20" y="71" width="374" height="149"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DocumentRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="m8s-DT-peN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Upload Audio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-9R-GcQ">
+                                        <rect key="frame" x="110" y="64" width="154" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLd-vh-lQk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="uploadAudioTapped:" destination="QcK-lB-gMp" eventType="touchUpInside" id="XKF-0H-ycU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ztu-9R-GcQ" firstAttribute="centerX" secondItem="a48-hn-Nwf" secondAttribute="centerX" id="191-aK-s49"/>
+                                    <constraint firstAttribute="height" constant="149" id="3py-tY-fOf"/>
+                                    <constraint firstItem="Ztu-9R-GcQ" firstAttribute="centerY" secondItem="a48-hn-Nwf" secondAttribute="centerY" id="6vf-40-daf"/>
+                                    <constraint firstItem="m8s-DT-peN" firstAttribute="leading" secondItem="a48-hn-Nwf" secondAttribute="leading" id="8HZ-yy-b7r"/>
+                                    <constraint firstAttribute="bottom" secondItem="wLd-vh-lQk" secondAttribute="bottom" id="Tt5-Fs-1dD"/>
+                                    <constraint firstAttribute="trailing" secondItem="wLd-vh-lQk" secondAttribute="trailing" id="er6-Af-yZN"/>
+                                    <constraint firstItem="m8s-DT-peN" firstAttribute="top" secondItem="a48-hn-Nwf" secondAttribute="top" id="ibi-2y-BH7"/>
+                                    <constraint firstItem="wLd-vh-lQk" firstAttribute="top" secondItem="a48-hn-Nwf" secondAttribute="top" id="m77-Bk-mty"/>
+                                    <constraint firstAttribute="bottom" secondItem="m8s-DT-peN" secondAttribute="bottom" id="net-Lf-hla"/>
+                                    <constraint firstAttribute="trailing" secondItem="m8s-DT-peN" secondAttribute="trailing" id="tXK-yJ-V1X"/>
+                                    <constraint firstItem="wLd-vh-lQk" firstAttribute="leading" secondItem="a48-hn-Nwf" secondAttribute="leading" id="xxT-mJ-bDw"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ruw-Cn-zmS">
+                                <rect key="frame" x="0.0" y="230" width="414" height="632"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rdE-Hq-WSw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a48-hn-Nwf" firstAttribute="top" secondItem="rdE-Hq-WSw" secondAttribute="top" constant="27" id="1ST-ZP-aUy"/>
+                            <constraint firstItem="rdE-Hq-WSw" firstAttribute="trailing" secondItem="a48-hn-Nwf" secondAttribute="trailing" constant="20" id="1XP-da-vaL"/>
+                            <constraint firstItem="a48-hn-Nwf" firstAttribute="leading" secondItem="rdE-Hq-WSw" secondAttribute="leading" constant="20" id="7v6-gD-Rmz"/>
+                            <constraint firstItem="Ruw-Cn-zmS" firstAttribute="top" secondItem="a48-hn-Nwf" secondAttribute="bottom" constant="10" id="Ub3-l3-Mxc"/>
+                            <constraint firstItem="Ruw-Cn-zmS" firstAttribute="trailing" secondItem="rdE-Hq-WSw" secondAttribute="trailing" id="cpx-jm-yZA"/>
+                            <constraint firstItem="Ruw-Cn-zmS" firstAttribute="bottom" secondItem="rdE-Hq-WSw" secondAttribute="bottom" id="pp6-jU-PpJ"/>
+                            <constraint firstItem="Ruw-Cn-zmS" firstAttribute="leading" secondItem="rdE-Hq-WSw" secondAttribute="leading" id="w9Y-Cr-IvL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ruw-Cn-zmS" id="Qcu-aS-zIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABU-od-blH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="103.79464285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DocumentRectangle" width="1376" height="604"/>
+        <image name="techozon" width="255" height="57"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

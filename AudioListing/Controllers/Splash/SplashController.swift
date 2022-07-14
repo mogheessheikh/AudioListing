@@ -27,8 +27,7 @@ class SplashController: UIViewController {
         self.present(nextViewController, animated:true, completion:nil)
     }
     
-    deinit {
+    override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
     }
-
 }

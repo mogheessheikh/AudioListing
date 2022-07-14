@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		84061E70287FE3920027D8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E6F287FE3920027D8FE /* AppDelegate.swift */; };
 		84061E72287FE3920027D8FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E71287FE3920027D8FE /* SceneDelegate.swift */; };
-		84061E74287FE3920027D8FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E73287FE3920027D8FE /* ViewController.swift */; };
 		84061E77287FE3920027D8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84061E75287FE3920027D8FE /* Main.storyboard */; };
 		84061E79287FE3940027D8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84061E78287FE3940027D8FE /* Assets.xcassets */; };
 		84061E7C287FE3940027D8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84061E7A287FE3940027D8FE /* LaunchScreen.storyboard */; };
+		84061E85287FE6900027D8FE /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E84287FE6900027D8FE /* SplashController.swift */; };
+		84061E88287FE72C0027D8FE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E87287FE72C0027D8FE /* Extension.swift */; };
+		84061E8A287FE9D50027D8FE /* AudioListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E89287FE9D50027D8FE /* AudioListController.swift */; };
+		84061E8F287FEF710027D8FE /* AudioAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E8E287FEF710027D8FE /* AudioAdapter.swift */; };
+		84061E93287FF0DA0027D8FE /* AudioTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E91287FF0DA0027D8FE /* AudioTableCell.swift */; };
+		84061E94287FF0DA0027D8FE /* AudioTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84061E92287FF0DA0027D8FE /* AudioTableCell.xib */; };
+		84061E96287FF2D70027D8FE /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E95287FF2D70027D8FE /* Enums.swift */; };
+		84061E98288000B90027D8FE /* AudioPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84061E97288000B90027D8FE /* AudioPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84061E6C287FE3920027D8FE /* AudioListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84061E6F287FE3920027D8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84061E71287FE3920027D8FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84061E73287FE3920027D8FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84061E76287FE3920027D8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84061E78287FE3940027D8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84061E7B287FE3940027D8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84061E7D287FE3940027D8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84061E84287FE6900027D8FE /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		84061E87287FE72C0027D8FE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		84061E89287FE9D50027D8FE /* AudioListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListController.swift; sourceTree = "<group>"; };
+		84061E8E287FEF710027D8FE /* AudioAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAdapter.swift; sourceTree = "<group>"; };
+		84061E91287FF0DA0027D8FE /* AudioTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableCell.swift; sourceTree = "<group>"; };
+		84061E92287FF0DA0027D8FE /* AudioTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioTableCell.xib; sourceTree = "<group>"; };
+		84061E95287FF2D70027D8FE /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		84061E97288000B90027D8FE /* AudioPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		84061E6E287FE3920027D8FE /* AudioListing */ = {
 			isa = PBXGroup;
 			children = (
+				84061E86287FE7140027D8FE /* Common */,
+				84061E83287FE66D0027D8FE /* Controllers */,
 				84061E6F287FE3920027D8FE /* AppDelegate.swift */,
 				84061E71287FE3920027D8FE /* SceneDelegate.swift */,
-				84061E73287FE3920027D8FE /* ViewController.swift */,
 				84061E75287FE3920027D8FE /* Main.storyboard */,
 				84061E78287FE3940027D8FE /* Assets.xcassets */,
 				84061E7A287FE3940027D8FE /* LaunchScreen.storyboard */,
 				84061E7D287FE3940027D8FE /* Info.plist */,
 			);
 			path = AudioListing;
+			sourceTree = "<group>";
+		};
+		84061E83287FE66D0027D8FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84061E8C287FEF320027D8FE /* Audio */,
+				84061E8B287FEF270027D8FE /* Splash */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84061E86287FE7140027D8FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84061E87287FE72C0027D8FE /* Extension.swift */,
+				84061E95287FF2D70027D8FE /* Enums.swift */,
+				84061E97288000B90027D8FE /* AudioPicker.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84061E8B287FEF270027D8FE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				84061E84287FE6900027D8FE /* SplashController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		84061E8C287FEF320027D8FE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				84061E8D287FEF3C0027D8FE /* Adapter */,
+				84061E89287FE9D50027D8FE /* AudioListController.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		84061E8D287FEF3C0027D8FE /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				84061E90287FF0BB0027D8FE /* Cells */,
+				84061E8E287FEF710027D8FE /* AudioAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		84061E90287FF0BB0027D8FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84061E91287FF0DA0027D8FE /* AudioTableCell.swift */,
+				84061E92287FF0DA0027D8FE /* AudioTableCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84061E7C287FE3940027D8FE /* LaunchScreen.storyboard in Resources */,
+				84061E94287FF0DA0027D8FE /* AudioTableCell.xib in Resources */,
 				84061E79287FE3940027D8FE /* Assets.xcassets in Resources */,
 				84061E77287FE3920027D8FE /* Main.storyboard in Resources */,
 			);
@@ -138,9 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84061E74287FE3920027D8FE /* ViewController.swift in Sources */,
+				84061E8F287FEF710027D8FE /* AudioAdapter.swift in Sources */,
 				84061E70287FE3920027D8FE /* AppDelegate.swift in Sources */,
 				84061E72287FE3920027D8FE /* SceneDelegate.swift in Sources */,
+				84061E85287FE6900027D8FE /* SplashController.swift in Sources */,
+				84061E8A287FE9D50027D8FE /* AudioListController.swift in Sources */,
+				84061E93287FF0DA0027D8FE /* AudioTableCell.swift in Sources */,
+				84061E98288000B90027D8FE /* AudioPicker.swift in Sources */,
+				84061E96287FF2D70027D8FE /* Enums.swift in Sources */,
+				84061E88287FE72C0027D8FE /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,20 +12,27 @@ class AudioListController: UIViewController,MPMediaPickerControllerDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
+    var adapter:AudioAdapter!
+    var audios = [URL]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.adapter = AudioAdapter(tableView: tableView, parent: self)
 
     }
     
     @IBAction func uploadAudioTapped(_ sender: UIButton) {
-        
-        let controller = MPMediaPickerController(mediaTypes: .music)
-           controller.allowsPickingMultipleItems = true
-           controller.popoverPresentationController?.sourceView = sender
-           controller.delegate = self
-           present(controller, animated: true)
+        getAudioList()
     }
     
   
+    func getAudioList() {
 
+        AudioPicker.shared.open(from: self) { (url) in
+            self.audios.append(url)
+            self.adapter.audios = self.audios
+            self.tableView.reloadData()
+        
+        }
+}
 }
